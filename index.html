@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <meta name="description" content="Affordable and Professional Web design">
+        <meta name="authors" content="Arjun Maheshwari">
+        <title>Legion Legen, Maestroware's Website Developer | Welcome</title>
+        <link rel="stylesheet" href="style.css">
+        <style type="text/css">
+            body{
+    font: 15px/1.5 Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    background: #f4f4f4;
+}
+
+/* Global */
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+
+}
+
+h1.im{
+    color: black;
+    font-family: cursive;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+.button_1{
+    height: 38px;
+    background: #e8491d;
+    border: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #ffffff;
+}
+
+.dark{
+    padding: 15px;
+    background: #35424a;
+    color: #ffffff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+li.bold{
+    margin-left: 595px;
+    float: center;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+a.bold{
+    color: #33cc33;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 24px;
+}
+
+a.bold:hover{
+    color: #e8491d;
+    font-weight: bold;
+}
+
+li.normal{
+    margin-left: 595px;
+    float: center;
+    color: black;
+    display: inline;
+    padding: 0 20px 0 20px;
+    transition: 0.6s ease;
+}
+
+a.normal{
+    color: black;
+    text-decoration: none;
+    transition: 0.6s ease;
+    font-size: 24px;
+}
+
+a.normal:hover{
+    background-color: #000000;
+    color: white;
+}
+
+.shine{
+    padding: 10px;
+    background-color: #012839;
+}
+
+li.shiny{
+    margin-left: 400px;
+    float: center;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+a.shiny{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    font-size: 24px;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    color: #00c7ec;
+    border: 1px solid #00c7ec;
+    border-radius: 0px;
+    line-height: 3em;
+    overflow: hidden;
+    padding: 0 3em;
+    box-shadow: 0 0 0 0 transparent;
+    letter-spacing: 4px;
+    transition: all 0.6s ease-in;
+}
+
+a.shiny:hover{
+    color: white;
+    background-color: #00c7ec;
+    box-shadow: 0 0 30px 0 rgba(0, 199, 236, 0.5);
+    transition: all 0.6s ease-out;
+}
+
+a.shiny::before{
+    content: '';
+    display: block;
+    width: 0px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    background-color: #fff;
+    box-shadow: 0 0 15px 3px white;
+    transform: skewX(-20deg);
+}
+
+a.shine:hover::before{
+    animation-name: shiner;
+    animation: 1s 0s linear;
+}
+
+
+
+/* Header **/
+header{
+    background: #35424a;
+    color: #ffffff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: 10px solid #e8491d;
+}
+
+header a{
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header ul{
+    margin: 0;
+    padding: 0;
+}
+
+header li{
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header #branding{
+    float: left;
+}
+
+header #branding h1{
+    margin: 0;
+}
+
+header nav{
+    float: right;
+    margin-top: 10px;
+}
+
+header .highlight, header .current a{
+    color: #e8491d;
+    font-weight: bold;
+}
+
+header a:hover{
+    color: orangered;
+    font-weight: bold;
+    height: auto;
+}
+
+/* Showcase **/
+#showcase{
+    min-height: 400px;
+    background: darkcyan;
+    text-align: center;
+    color: #f4f4f4;
+}
+
+#showcase h1{
+    margin-top: 100px;
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+#showcase p{
+    font-size: 20px;
+}
+
+#showcase a{
+        color: #ffffff;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 16px;
+        transition: 0.6s ease;
+        border-color: white;
+    }
+
+
+    #showcase li{
+        float: center;
+        display: inline;
+        padding: 0 20px 0 20px;
+    }
+
+     #showcase a:hover{
+        background: white;
+        color: black;
+        border-color: black;
+    }
+
+    /* Newsletter **/
+    #newsletter{
+        padding: 15px;
+        color: #f4f4f4;
+        background: #35424a;
+    }
+
+    #newsletter h1{
+        float: left;
+    }
+
+    #newsletter form{
+        float: right;
+        margin-top: 15px;
+    }
+
+    #newsletter input[type="email"]{
+        padding: 4px;
+        height: 25px;
+        width: 250px;
+    }
+
+    /* Boxes **/
+
+    #boxes{
+        margin-top: 20px;
+    }
+
+    #boxes .container{
+        float: center;
+        text-align: center;
+        width: 30%;
+        padding: 10px;
+        color: black;
+    }
+
+    .mail h1{
+        color:black;
+        text-align: center;
+    }
+
+    .mail li{
+        float: center;
+        display: inline;
+        padding: 0 20px 0 20px;
+    }
+
+    .mail a{
+        color:  #ff7c48;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 16px;
+        transition: 0.6s ease;
+        border-color: transparent;
+    }
+
+    .mail a:hover{
+        background-color: tomato;
+        color: white;
+        text-align: center;
+    }
+
+    /* Sidebar **/
+    aside#sidebar{
+        float: right;
+        width: 30%;
+        margin-top: 10px;
+    }
+    ::-webkit-scrollbar{
+        width: 10px;
+    }
+    ::-webkit-scrollbar-thumb
+
+    /* Main-col **/
+    article#main-col{
+        float: left;
+        width: 65%;
+    }
+
+    footer{
+        padding: 20px;
+        margin-top: 20px;
+        color: #ffffff;
+        background: #e8491d;
+        text-align: center;
+    }
+        </style>
+    </head>
+    <body>
+        <header>
+        <div class="container">
+        <div id="branding">
+            <h1><span class="highlight">Legion</span> Legen</h1>
+            <p>by Maestroware</p>
+        </div>
+        <nav>
+            <ul>
+                <li class="current"><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+        </div>
+        </header>
+        <section id="showcase">
+            <div class="container">
+                <h1>Affordable Professional Web Design</h1>
+                <p>$674.47 Dollars for first year, $539.57 from second year onwards.</p>
+                <li><a href="2.html">Choose Your Selection For Your Website To Be Made</a></li>
+                <p>Just One Mail And Job Done</p>
+            </div>
+        </section>
+
+        <section id="newsletter">
+            <div class="container">
+                <h1>Subscribe To Our Newsletter</h1>
+
+                <form>
+                    <input type="email" placeholder="Enter Email...">
+                    <button type="submit" class="button_1">Submit</button>
+                </form>
+            </div>
+        </section>
+        <section id="boxes">
+                <div class="container">
+                    <h1 class="im">Our Speciality</h1>
+                    <p style="color: red;"><marquee>Our Secret Is <i>Jugaad</i>(Hindi word which means Makeshift).</marquee></p>
+                    <p>This website also have some <i>Jugaad.</i></p>
+                </div>
+        </section>
+        <div class="mail">
+<h1>If you want to join Maestroware's Any Program.<br>
+    Mail us "Join (Program) at maestroware-join@gmail.com"</h1>
+<li><a href="program.txt">Learn More about Our Programs and what each program does.</a></li>
+</div>        
+<footer>
+            <p>Legion Legen by Maestroware, Copyright &copy; 2020</p>
+        </footer>
+    </body>
+</html>
